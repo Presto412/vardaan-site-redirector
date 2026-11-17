@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import worker from './src.mjs';
+const origin='https://admin.example.test', ctx={access:{getIdentity:async()=>({email:'staff@example.com'})}}, env={GITHUB_TOKEN:'test-only'};
+const item={name:'Kadai',range:'Cookware',category:'Cookware',image:'assets/product-3-0.jpg',description:''};const sha='a'.repeat(40);let calls=[];
+globalThis.fetch=async(url,opts)=>{calls.push({url,opts});if(opts.method==='PUT')return Response.json({content:{sha:'b'.repeat(40)}});return Response.json({sha,content:btoa(JSON.stringify([item]))})};
+const request=(path,options={})=>new Request(origin+path,options);
+let r=await worker.fetch(request('/api/products'),env,{});assert.equal(r.status,403);assert.equal(calls.length,0);
+r=await worker.fetch(request('/api/products'),env,ctx);assert.equal(r.status,200);assert.equal((await r.json()).products[0].name,'Kadai');
+const payload=JSON.stringify({products:[{...item,name:'Kadai & கிண்ணம்'}],sha});
+r=await worker.fetch(request('/api/products',{method:'PUT',headers:{'Origin':'https://evil.test','Content-Type':'application/json'},body:payload}),env,ctx);assert.equal(r.status,403);
+r=await worker.fetch(request('/api/products',{method:'PUT',headers:{'Origin':origin,'Content-Type':'application/json'},body:payload}),env,ctx);assert.equal(r.status,200);assert.equal((await r.json()).sha,'b'.repeat(40));assert.match(calls.at(-1).opts.body,/Update product catalogue/);
+r=await worker.fetch(request('/api/upload',{method:'POST',headers:{'Origin':origin,'Content-Type':'application/json'},body:JSON.stringify({type:'image/png',data:btoa('not-a-png-content')})}),env,ctx);assert.equal(r.status,400);
+globalThis.fetch=async()=>Response.json({message:'conflict'},{status:409});r=await worker.fetch(request('/api/products',{method:'PUT',headers:{'Origin':origin,'Content-Type':'application/json'},body:payload}),env,ctx);assert.equal(r.status,409);
+console.log('Passed: authentication fails closed, GitHub reads and saves, Unicode, origin protection, invalid uploads and concurrent-edit conflicts.');
