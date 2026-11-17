@@ -1,12 +1,5 @@
 [
   {
-    "name": "Test product",
-    "range": "Steel",
-    "category": "Cookware",
-    "description": "Test",
-    "image": "assets/upload-b0a7cdd1-dfa2-441b-a1a2-f78c20bd4ab6.jpg"
-  },
-  {
     "name": "Induction base idly pot",
     "range": "Induction utensils",
     "category": "Cookware",
