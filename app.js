@@ -8,7 +8,7 @@ function render() {
   const results = items.filter(p => (filter === 'All' || p.category === filter) && `${p.name} ${p.range} ${p.description || ''}`.toLowerCase().includes(query));
   productContainer.innerHTML = results.map(p => {
     const name = escapeHtml(p.name), range = escapeHtml(p.range), image = escapeHtml(p.image), description = escapeHtml(p.description);
-    return `<article class="product"><div class="product-image"><img src="${image}" alt="${name}" loading="lazy" width="250" height="250"></div><p class="category">${range.toUpperCase()}</p><h3>${name}</h3>${description ? `<p class="product-description">${description}</p>` : ''}<a href="https://www.indiamart.com/vardaandistributors/" target="_blank" rel="noopener" aria-label="Enquire about ${name}">Enquire about this product ↗</a></article>`;
+    return `<article class="product"><div class="product-image"><img src="${image}" alt="${name}" loading="lazy" width="250" height="250"></div><p class="category">${range.toUpperCase()}</p><h3>${name}</h3>${description ? `<p class="product-description">${description}</p>` : ''}<a href="https://www.indiamart.com/vardaandistributors/" target="_blank" rel="noopener" aria-label="Enquire about ${name}">Enquire about this product →</a></article>`;
   }).join('');
   document.querySelector('#empty').hidden = results.length !== 0;
   document.querySelector('#result-count').textContent = `${results.length} products shown`;
