@@ -1,0 +1,35 @@
+media:
+  input: assets
+  output: /assets
+  rename: random
+  categories: [image]
+content:
+  - name: products
+    label: Product catalogue
+    type: file
+    path: products.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Product name
+        type: string
+        required: true
+      - name: range
+        label: Product range
+        type: string
+        required: true
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values: [Cookware, Tableware, Storage]
+      - name: image
+        label: Product photo
+        type: image
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: false

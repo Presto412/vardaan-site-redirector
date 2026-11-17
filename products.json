@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Induction base idly pot",
+    "range": "Induction utensils",
+    "category": "Cookware",
+    "image": "assets/product-3-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Copper bottom kadai",
+    "range": "Copper bottom utensils",
+    "category": "Cookware",
+    "image": "assets/product-6-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Clip lunch carrier",
+    "range": "Lunch carriers",
+    "category": "Storage",
+    "image": "assets/product-4-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Designer plate 26G",
+    "range": "Designer plates",
+    "category": "Tableware",
+    "image": "assets/product-8-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Coloured storage container",
+    "range": "Coloured fancy ware",
+    "category": "Storage",
+    "image": "assets/product-7-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Stainless steel oval tray",
+    "range": "Serving trays",
+    "category": "Tableware",
+    "image": "assets/product-5-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Fancy bowl",
+    "range": "Stainless steel bowls",
+    "category": "Tableware",
+    "image": "assets/product-9-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Copper bottom wire saucepan",
+    "range": "Copper bottom utensils",
+    "category": "Cookware",
+    "image": "assets/product-6-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Bulging pots",
+    "range": "Stainless steel utensils",
+    "category": "Cookware",
+    "image": "assets/product-2-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Designer parat",
+    "range": "Stainless steel utensils",
+    "category": "Cookware",
+    "image": "assets/product-2-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Fancy basin",
+    "range": "Stainless steel utensils",
+    "category": "Cookware",
+    "image": "assets/product-2-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Fancy parat",
+    "range": "Stainless steel utensils",
+    "category": "Cookware",
+    "image": "assets/product-2-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Induction kadai",
+    "range": "Induction utensils",
+    "category": "Cookware",
+    "image": "assets/product-3-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Induction cookware",
+    "range": "Induction utensils",
+    "category": "Cookware",
+    "image": "assets/product-3-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Induction base utensils",
+    "range": "Induction utensils",
+    "category": "Cookware",
+    "image": "assets/product-3-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Stainless steel food pack",
+    "range": "Lunch carriers",
+    "category": "Storage",
+    "image": "assets/product-4-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Square food pack box",
+    "range": "Lunch carriers",
+    "category": "Storage",
+    "image": "assets/product-4-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Square food pack",
+    "range": "Lunch carriers",
+    "category": "Storage",
+    "image": "assets/product-4-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Fancy oval serving tray",
+    "range": "Serving trays",
+    "category": "Tableware",
+    "image": "assets/product-5-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Fancy tray",
+    "range": "Serving trays",
+    "category": "Tableware",
+    "image": "assets/product-5-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Stainless steel star tray",
+    "range": "Serving trays",
+    "category": "Tableware",
+    "image": "assets/product-5-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Copper bottom saucepan",
+    "range": "Copper bottom utensils",
+    "category": "Cookware",
+    "image": "assets/product-6-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Copper bottom cook & serve set",
+    "range": "Copper bottom utensils",
+    "category": "Cookware",
+    "image": "assets/product-6-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Coloured saucepan",
+    "range": "Coloured fancy ware",
+    "category": "Storage",
+    "image": "assets/product-7-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Coloured table dish",
+    "range": "Coloured fancy ware",
+    "category": "Storage",
+    "image": "assets/product-7-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "Coloured kadai with lid",
+    "range": "Coloured fancy ware",
+    "category": "Storage",
+    "image": "assets/product-7-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Designer parat",
+    "range": "Designer plates",
+    "category": "Tableware",
+    "image": "assets/product-8-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Payal plate",
+    "range": "Designer plates",
+    "category": "Tableware",
+    "image": "assets/product-8-2.jpg",
+    "description": ""
+  },
+  {
+    "name": "SS Saniya plate",
+    "range": "Designer plates",
+    "category": "Tableware",
+    "image": "assets/product-8-3.jpg",
+    "description": ""
+  },
+  {
+    "name": "Silver touch table dish",
+    "range": "Stainless steel bowls",
+    "category": "Tableware",
+    "image": "assets/product-9-0.jpg",
+    "description": ""
+  },
+  {
+    "name": "Stew pan with lid",
+    "range": "Stainless steel bowls",
+    "category": "Tableware",
+    "image": "assets/product-9-1.jpg",
+    "description": ""
+  },
+  {
+    "name": "Stainless steel pet bowl",
+    "range": "Stainless steel bowls",
+    "category": "Tableware",
+    "image": "assets/product-9-3.jpg",
+    "description": ""
+  }
+]
